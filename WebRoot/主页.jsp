@@ -9,8 +9,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>登录</title>
-    <!--声明文档兼容模式，表示使用IE浏览器的最新模式-->
+    <title>主页</title>
+    
+	
+	<!--声明文档兼容模式，表示使用IE浏览器的最新模式-->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!--设置视口的宽度(值为设备的理想宽度)，页面初始缩放值<理想宽度/可见宽度>-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,38 +34,32 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
 	
-	<style>
-			body{
-				background-image: url(img/背景.png);
-				background-size:100% 100%;
-			}
+		
+		<style>
 			.container{
 				height: 600px;
 			}
-			#div_register{
-				text-align: center;
-				width:500px;
-                margin: 200px auto;
-                background-color: rgba(84,118,84,0.5);
-
+			#div_head{
+			    height:10%;
+			    border:1px;
+			    boder-color:red;
 			}
+			#div_middle{
+			    <img src="img/背景2.png"/>
+			}
+			
 		</style>
 		
+
   </head>
   
   <body>
     <div class="container" >
-			<div id="div_register">
-				<form action=“../../src/LoginServlet” method="get">
-					<br /><br />
-					<font color="white">账号&nbsp;&nbsp;&nbsp;</font><input type="text" name="e_mail"/><br /><br />
-					<font color="white">密码&nbsp;&nbsp;&nbsp;</font><input type="password" name="password"/><br /><br />
-					<input class="btn btn-default " type="submit" value="登录"/><br /><br />
-					<a class="btn btn-default btn-sm" href="注册.jsp" role="button">注册</a>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<a class="btn btn-default btn-sm" href="#" role="button">忘记密码</a>
-				</form>
-			</div>
-		</div>
+	    <div id="div_head">
+	    
+	    </div>
+	    <div id="div_middle"></div>
+	    <div id="div_botton"></div>
+    </div>
   </body>
 </html>

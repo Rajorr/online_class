@@ -46,7 +46,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			#div_register{
 				text-align: center;
 				width:500px;
-                margin: 250px auto;
+                margin: 150px auto;
                 background-color: rgba(84,118,84,0.5);
 
 			}
@@ -58,12 +58,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <body>
     <div class="container" >
 			<div id="div_register">
-				<form>
+				<form action=“../../src/RegisterServlet” method="get">
 					<br /><br />
-					<font color="white">邮箱&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><input type="text" id="e_mail"/><br /><br />
+					<font color="white">邮箱&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><input type="text" name="e_mail"/><br /><br />
 					<font color="white">学号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><input type="text" name="password"/><br /><br />
 					<font color="white">密码&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><input type="password" name="password"/><br /><br />
 					<font color="white">确认密码&nbsp;&nbsp;&nbsp;</font><input type="password" name="repassword"/><br /><br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="identity" value="teacher"/><font color="white">老师</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="identity"value="student"/><font color="white">学生</font><br/><br/>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="btn btn-default " type="button" value="注册"/><br /><br />
 				</form>
 			</div>
