@@ -31,7 +31,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
-	<script src="js/index.js"></script>
+	<!--<script src="js/index.js"></script>  -->
 	
 	<style>
 			body{
@@ -56,7 +56,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <body>
     <div class="container" >
 			<div id="div_register">
-				<form action=“../../src/LoginServlet” method="get">
+				<form action="LoginServlet" method="post">
 					<br /><br />
 					<font color="white">账号&nbsp;&nbsp;&nbsp;</font><input type="text" name="e_mail"/><br /><br />
 					<font color="white">密码&nbsp;&nbsp;&nbsp;</font><input type="password" name="password"/><br /><br />
