@@ -38,9 +38,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<style>
 			.container{
 				height: 600px;
+				border:1px;
+			    boder-color:red;
 			}
 			#div_head{
-			    height:10%;
+			    height:60px;
 			    border:1px;
 			    boder-color:red;
 			}

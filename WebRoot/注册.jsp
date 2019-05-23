@@ -46,11 +46,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			#div_register{
 				text-align: center;
 				width:500px;
-                margin: 150px auto;
-                background-color: rgba(84,118,84,0.5);
+                margin: 200px auto;
+                background-color: rgba(99,111,93,0.5);
 
 			}
+			.span_userTip{
+			    color:white;
+			    display:inline-block;
+			}
 		</style>
+		
 		
 
   </head>
@@ -60,13 +65,20 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<div id="div_register">
 				<form action=“../../src/RegisterServlet” method="get">
 					<br /><br />
-					<font color="white">邮箱&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><input type="text" name="e_mail"/><br /><br />
-					<font color="white">学号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><input type="text" name="password"/><br /><br />
-					<font color="white">密码&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><input type="password" name="password"/><br /><br />
-					<font color="white">确认密码&nbsp;&nbsp;&nbsp;</font><input type="password" name="repassword"/><br /><br />
+					<font color="white">邮箱&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><input type="text" name="e_mail" />
+					<span class="span_userTip">*</span><br /><br />
+					<font color="white">工/学号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><input type="text" name="idnum"/>
+					<span class="span_userTip">*</span><br /><br />
+					<font color="white">密码&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><input type="password" name="password"/>
+					<span class="span_userTip">*</span><br /><br />
+					
+					<font color="white">确认密码&nbsp;&nbsp;&nbsp;</font><input type="password" name="repassword"/>
+					<span class="span_userTip">*</span><br /><br />
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="identity" value="teacher"/><font color="white">老师</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<input type="radio" name="identity"value="student"/><font color="white">学生</font><br/><br/>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="btn btn-default " type="button" value="注册"/><br /><br />
+					
+					<input type="radio" name="identity"value="student"/><font color="white">学生</font>
+					<br /><br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="btn btn-default " type="submit" value="立即注册"/><br /><br />
 				</form>
 			</div>
 		</div>

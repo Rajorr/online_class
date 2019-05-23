@@ -31,6 +31,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
+	<script src="js/index.js"></script>
 	
 	<style>
 			body{
@@ -43,11 +44,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			#div_register{
 				text-align: center;
 				width:500px;
-                margin: 200px auto;
-                background-color: rgba(84,118,84,0.5);
+                margin: 250px auto;
+                background-color: rgba(99,111,93,0.5);
 
 			}
 		</style>
+
 		
   </head>
   
@@ -58,7 +60,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<br /><br />
 					<font color="white">账号&nbsp;&nbsp;&nbsp;</font><input type="text" name="e_mail"/><br /><br />
 					<font color="white">密码&nbsp;&nbsp;&nbsp;</font><input type="password" name="password"/><br /><br />
-					<input class="btn btn-default " type="submit" value="登录"/><br /><br />
+					<input class="btn btn-default " type="submit" name="login_submit" value="登录"/><br /><br />
 					<a class="btn btn-default btn-sm" href="注册.jsp" role="button">注册</a>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					<a class="btn btn-default btn-sm" href="#" role="button">忘记密码</a>
